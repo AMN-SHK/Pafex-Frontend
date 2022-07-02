@@ -61,10 +61,53 @@ nav {
 @media screen and (max-width: 1024px) {
   .nav-links {
     width: 60%;
-  }
-  .logo h4 {
-    display: none;
-  }
+}
+header{
+  flex-direction: column;
+}
+header img{
+  margin: 10vh 0 0 0 !important;
+  width: 90%;
+  height:auto !important;
+}
+.main-text{
+  width: 100%;
+  margin: 0 !important;
+  padding: 20px;
+  background: #F2C8A4 url(images/cardboard.jpg) no-repeat center;
+  background-size: cover; 
+  border-radius: 20px 20px 0 0;
+}
+#track img{
+  width: 90% !important;
+}
+#prez{
+  flex-direction: column;
+  justify-content: space-evenly !important;
+}
+#prez img{
+  width: 50vh !important;
+  margin: 10px 0 !important;
+}
+.prez-text{
+  text-align: center;
+  margin: 10px 0 !important;
+}
+h1{
+  font-size: 36px !important;
+}
+h3{
+  font-size: 20px !important;
+}
+p{
+  font-size: 14px !important;
+}
+input{
+  font-size: 14px !important;
+}
+button{
+  font-size: 15px !important;
+}
 }
 @media screen and (max-width: 768px) {
   body {
@@ -93,44 +136,42 @@ nav {
   }
   header{
     flex-direction: column;
-    transition: 0.5s ease-in;
   }
   header img{
     margin: 15vh 0 0 0 !important;
     width: 95%;
     height:auto !important;
-    transition: 0.5s ease-in;
   }
   .main-text{
     width: 100%;
     margin: 0 !important;
     padding: 20px;
     background: #F2C8A4 url(images/cardboard.jpg) no-repeat center;
-    background-size: cover;
+    background-size: cover; 
     border-radius: 20px 20px 0 0;
-    transition: 0.5s ease-in;
   }
-  .track form{
+  #track form{
     flex-direction: column;
     background: none !important;
     align-items: center !important;
   }
-  .track input{
+  #track input{
     width: 90vw !important;
     height: 50px !important;
   }
-  .track button{
+  #track button{
     width: 90vw !important;
     height: 50px !important;
     margin-top: 10px;
   }
-  .track img{
+  #track img{
     width: 90% !important;
   }
-  .prez{
+  #prez{
     flex-direction: column;
+    justify-content: center !important;
   }
-  .prez img{
+  #prez img{
     width: 50vh !important;
     margin: 10px 0 !important;
   }
@@ -139,21 +180,21 @@ nav {
     margin: 10px 0 !important;
   }
   h1{
-    font-size: 32px !important;
+    font-size: 28px !important;
   }
   h3{
-    font-size: 24px !important;
+    font-size: 20px !important;
   }
   p{
-    font-size: 15px !important;
+    font-size: 14px !important;
   }
   input{
-    font-size: 15px !important;
+    font-size: 14px !important;
   }
   button{
     font-size: 15px !important;
   }
-  .contact{
+  #contact{
     flex-direction: column !important;
     flex-wrap: nowrap !important;
     height: 90vh !important;
@@ -164,7 +205,7 @@ nav {
     margin: 10px 0;
   }
   .fa-solid, .fa-brands{
-    font-size: 32px !important;
+    font-size: 28px !important;
   }
   .copyright{
     text-align: center;
@@ -238,7 +279,7 @@ header img {
   color: white;
   cursor: pointer;
 }
-.track{
+#track{
   background: #F2C8A4 url(images/cardboard.jpg) no-repeat center;
   width: 100%;
   height: 100vh;
@@ -248,7 +289,7 @@ header img {
   align-items: center;
   justify-content: space-between;
 }
-.track h1{
+#track h1{
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 600;
@@ -257,13 +298,13 @@ header img {
   margin-top: 10vh ;
   text-align: center;
 }
-.track form{
+#track form{
   display: flex;
   background: white;
   border-radius: 5px;
   align-items: center;
 }
-.track input{
+#track input{
   border: none;
   height: 50px;
   width: 50vw;
@@ -277,7 +318,7 @@ header img {
   font-size: 18px;
   color: #001021;
 }
-.track button{
+#track button{
   width: 10vw;
   height: 42px;
   border: none;
@@ -291,16 +332,16 @@ header img {
   color: white;
   margin-right: 5px;
 }
-.track img{
+#track img{
   width: 50%;
 }
-.prez{
+#prez{
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 100vh;
 }
-.prez img{
+#prez img{
   width: 70vh;
   border-radius: 10px;
   margin: 20px;
@@ -308,28 +349,28 @@ header img {
 .prez-text{
   margin: 10px;
 }
-.prez h1{
+#prez h1{
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 600;
   font-size: 3em;
   color: #004AAD;
 }
-.prez h3{
+#prez h3{
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 600;
   font-size: 2em;
   color: #004AAD;
 }
-.prez p{
+#prez p{
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 1.125em;
   color: #001021;
 }
-.contact{
+#contact{
   background: #F2C8A4 url(images/cardboard.jpg) no-repeat center;
   width: 100%;
   height: 92vh;
@@ -344,7 +385,7 @@ header img {
   width: 50%;
   padding: 50px;
 }
-.contact a{
+#contact a{
   text-decoration: none;
   color: #090909;
   font-family: 'Inter';
@@ -356,7 +397,7 @@ header img {
   font-size: 36px;
   padding-right: 10px;
 }
-.contact h1{
+#contact h1{
   display: inline;
   font-size: 36px;
   font-family: 'Roboto';
